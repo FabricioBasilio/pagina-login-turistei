@@ -1,10 +1,16 @@
 import { useState } from 'react'
 import "./App.scss"
+import LoginCard from './components/LoginCard/LoginCard'
 
 function App() {
 
+
+
+  /* componente principal: login-card (main) */
+
+
   return (
-    <h1>Hello, World!</h1>
+    <LoginCard />
   )
 }
 
