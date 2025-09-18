@@ -1,4 +1,6 @@
 import FormularioLogin from "../FormularioLogin/FormularioLogin";
+import LinhaSegmentacao from "../LinhaSegmentacao/LinhaSegmentacao";
+import SecaoBotoesLogin from "../SecaoBotoesLogin/SecaoBotoesLogin";
 import "./LoginCard.scss";
 
 function LoginCard() {
@@ -7,8 +9,8 @@ function LoginCard() {
   return (
     <main className="login_card">
       <FormularioLogin />
-      {/* <LinhaSegmentacao /> */}
-      {/* <SecaoBotoesLogin /> */}
+      <LinhaSegmentacao />
+      <SecaoBotoesLogin />
     </main>
   );
 }
