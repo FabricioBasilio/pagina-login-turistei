@@ -30,6 +30,9 @@ $cor_texto_padrao: #434343;
     &:last-child {
       color: $cor_texto_padrao;
       background-color: white;
+      p {
+        margin-right: 0.5px;
+      }
     }
 
     .botoes_wrap {
