@@ -2,12 +2,14 @@
   font-size: 0.8rem;
   display: flex;
   align-items: center;
+  margin-bottom: 3rem;
+  color: #636363;
   
   &::before,
   &::after {
       content: "";
       display: inline-block;
-      background-color: gray;
+      background-color: #636363;
       height: 0.05rem;
       width: 100%;
       
