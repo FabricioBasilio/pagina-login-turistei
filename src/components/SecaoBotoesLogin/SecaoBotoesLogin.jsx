@@ -7,8 +7,8 @@ import google_logo from "../../assets/images/google_logo.png"
 function SecaoBotoesLogin() {
   return (
     <section className="login_card__secao_botoes">
-      <button><img src={apple_logo} alt="Ícone" /><p>Login com Apple</p></button>
-      <button><img src={google_logo} alt="Ícone" /><p>Login com Google</p></button>
+      <button><div className="botoes_wrap"><img src={apple_logo} alt="Ícone" /><p>Login com Apple</p></div></button>
+      <button><div className="botoes_wrap"><img src={google_logo} alt="Ícone" /><p>Login com Google</p></div></button>
     </section>
   );
 }

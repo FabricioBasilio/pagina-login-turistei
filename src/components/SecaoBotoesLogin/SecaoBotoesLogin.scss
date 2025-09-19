@@ -11,13 +11,18 @@ $cor_texto_padrao: #434343;
     border: none;
     border-radius: $radius_padrao;
     padding: 1rem 0;
-    position: relative;
     border: $border_botoes;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:first-child {
       background-color: black;
       color: white;
+      p {
+        margin-right: 0.5rem;
+      }
     }
 
     &:last-child {
@@ -25,11 +30,14 @@ $cor_texto_padrao: #434343;
       background-color: white;
     }
 
-    img {
-      position: absolute;
-      top: 0.7rem;
-      left: 5rem;
-      width: 1.45rem;
+    .botoes_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 8.5rem;
+      img {
+        width: 1.45rem;
+      }
     }
   }
 }
