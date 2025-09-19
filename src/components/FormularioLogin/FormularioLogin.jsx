@@ -1,4 +1,7 @@
 import "./FormularioLogin.scss";
+import mail from "../../assets/images/mail.png"
+import visibility from "../../assets/images/visibility.png"
+
 
 function FormularioLogin() {
   return (
@@ -13,8 +16,8 @@ function FormularioLogin() {
         <button>Criar conta</button>
       </div>
       <form className="conteudo__formulario">
-        <input placeholder="E-mail" type="email" required />
-        <input placeholder="Senha" type="password" required />
+        <div><input placeholder="E-mail" type="email" maxLength={30} required /> <img src={mail} alt="Ícone de e-mail"/></div>
+        <div><input placeholder="Senha" type="password" maxLength={10} required /> <img src={visibility} alt="Ícone de visualização"/></div>
         <section className="formulario__opcoes">
           <input type="radio" id="lembrar_senha" />{" "}
           <label htmlFor="lembrar_senha">Lembrar minha senha</label>
