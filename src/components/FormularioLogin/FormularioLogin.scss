@@ -5,9 +5,11 @@ $border_entradas: 0.12rem solid gray;
 section.login_card__conteudo {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 
   .conteudo__titulos {
+    margin-bottom: 2rem;
     h1,
     h4 {
       text-align: center;
@@ -18,6 +20,7 @@ section.login_card__conteudo {
     }
 
     h4 {
+        color: #858080;
       font: {
         size: 0.9rem;
         weight: 300;
@@ -45,11 +48,11 @@ section.login_card__conteudo {
   form.conteudo__formulario {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
 
-    div {
+    div.entrada {
       position: relative;
-      background-color: blue;
+
       input {
         padding: 1.1rem 0 1.1rem 1rem;
         font-size: $font_size_padrao;
@@ -72,6 +75,35 @@ section.login_card__conteudo {
         right: 1rem;
         width: 1.1rem;
       }
+    }
+
+    .formulario__opcoes {
+      display: flex;
+      justify-content: space-between;
+      font-size: $font_size_padrao;
+      width: 95%;
+      align-self: center;
+      div {
+        display: flex;
+        align-items: center;
+
+        label {
+          margin-left: 0.3rem;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+        font-weight: 600;
+      }
+    }
+
+    button[type="submit"] {
+        background-color: blue;
+        border: none;
+        color: white;
+        border-radius: $radius_padrao;
+        padding: 1rem 0;
     }
   }
 }
