@@ -10,7 +10,7 @@ $cor_texto_padrao: #434343;
   button {
     border: none;
     border-radius: $radius_padrao;
-    padding: 1rem 0;
+    padding: 12px 0;
     border: $border_botoes;
     cursor: pointer;
     display: flex;
@@ -21,7 +21,7 @@ $cor_texto_padrao: #434343;
       background-color: black;
       color: white;
       p {
-        margin-top: 3.5px;
+        margin-top: 3px;
 
         margin-right: 10px;
       }
