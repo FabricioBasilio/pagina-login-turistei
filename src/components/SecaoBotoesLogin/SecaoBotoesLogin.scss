@@ -1,0 +1,48 @@
+$radius_padrao: 1.5rem;
+$border_botoes: 0.12rem solid black;
+$cor_texto_padrao: #434343;
+
+.login_card__secao_botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  button {
+    border: none;
+    border-radius: $radius_padrao;
+    padding: 12px 0;
+    border: $border_botoes;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      background-color: black;
+      color: white;
+      p {
+        margin-top: 3px;
+
+        margin-right: 9.5px;
+      }
+    }
+
+    &:last-child {
+      color: $cor_texto_padrao;
+      background-color: white;
+      p {
+        margin-right: 0.5px;
+      }
+    }
+
+    .botoes_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 140px;
+      img {
+        width: 23.2px;
+      }
+    }
+  }
+}
