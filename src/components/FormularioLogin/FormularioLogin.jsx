@@ -5,11 +5,18 @@ import { useState } from "react";
 
 function FormularioLogin() {
   const [loginMethod, setLoginMethod] = useState("sign_in");
+  const [passwordInputType, setPasswordInputType] = useState("password");
 
   function changeMethod(e) {
     e.target.id === "botao_sign_in"
       ? setLoginMethod("sign_in")
       : setLoginMethod("sign_up");
+  }
+
+  function changePasswordVisibility() {
+    passwordInputType === "password"
+      ? setPasswordInputType("text")
+      : setPasswordInputType("password");
   }
 
   function handleSubmit(e) {
@@ -45,8 +52,16 @@ function FormularioLogin() {
           <img src={mail} alt="Ícone de e-mail" />
         </div>
         <div className="entrada">
-          <input placeholder="Senha" type="password" maxLength={10} required />{" "}
-          <img src={visibility} alt="Ícone de visualização" />
+          <input
+            placeholder="Senha"
+            type={passwordInputType}
+            maxLength={10}
+            required
+            className="password_input"
+          />{" "}
+          <button type="button" onClick={changePasswordVisibility}>
+            <img src={visibility} alt="Ícone de visualização" />
+          </button>
         </div>
         <section className="formulario__opcoes">
           <div>
