@@ -21,7 +21,9 @@ $cor_texto_padrao: #434343;
       background-color: black;
       color: white;
       p {
-        margin-right: 0.5rem;
+        margin-top: 3.5px;
+
+        margin-right: 10px;
       }
     }
 
@@ -34,9 +36,9 @@ $cor_texto_padrao: #434343;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 8.5rem;
+      width: 140px;
       img {
-        width: 1.45rem;
+        width: 23.2px;
       }
     }
   }
