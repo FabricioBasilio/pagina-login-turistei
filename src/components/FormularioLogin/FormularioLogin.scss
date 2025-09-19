@@ -38,12 +38,14 @@ section.login_card__conteudo {
     padding: 0.15rem;
 
     button {
-      padding: 0.5rem 3.5rem;
+      padding: 0.5rem 3rem;
+      width: 50%;
       border-radius: $radius_padrao;
       font-size: $font_size_padrao;
       border: none;
       background: none;
       cursor: pointer;
+      transition: background-color 0.1s linear, color 0.1s linear;
 
       &.--active {
         background-color: #0160d6;
@@ -93,6 +95,7 @@ section.login_card__conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 3;
 
         img {
           position: static;
