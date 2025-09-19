@@ -1,5 +1,6 @@
 $radius_padrao: 1.5rem;
 $border_botoes: 0.12rem solid black;
+$cor_texto_padrao: #434343;
 
 .login_card__secao_botoes {
   display: flex;
@@ -7,20 +8,20 @@ $border_botoes: 0.12rem solid black;
   gap: 1rem;
 
   button {
-    background-color: blue;
     border: none;
-    color: white;
     border-radius: $radius_padrao;
     padding: 1rem 0;
     position: relative;
     border: $border_botoes;
+    cursor: pointer;
 
     &:first-child {
       background-color: black;
+      color: white;
     }
 
     &:last-child {
-      color: #434343;
+      color: $cor_texto_padrao;
       background-color: white;
     }
 

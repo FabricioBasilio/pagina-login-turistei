@@ -1,6 +1,7 @@
 $radius_padrao: 1.5rem;
 $font_size_padrao: 0.7rem;
 $border_entradas: 0.12rem solid gray;
+$cor_texto_padrao: #434343;
 
 section.login_card__conteudo {
   display: flex;
@@ -20,7 +21,7 @@ section.login_card__conteudo {
     }
 
     h4 {
-        color: #858080;
+      color: #858080;
       font: {
         size: 0.9rem;
         weight: 300;
@@ -41,7 +42,14 @@ section.login_card__conteudo {
       border-radius: $radius_padrao;
       font-size: $font_size_padrao;
       border: none;
+      background: none;
       cursor: pointer;
+
+
+       &.--active {
+        background-color: #0160d6;
+        color: white;
+    }
     }
   }
 
@@ -83,27 +91,32 @@ section.login_card__conteudo {
       font-size: $font_size_padrao;
       width: 95%;
       align-self: center;
+      margin-bottom: 1rem;
+
       div {
         display: flex;
         align-items: center;
 
         label {
           margin-left: 0.3rem;
+          color: $cor_texto_padrao;
         }
       }
       a {
         text-decoration: none;
-        color: blue;
+        color: #08f;
         font-weight: 600;
       }
     }
 
     button[type="submit"] {
-        background-color: blue;
-        border: none;
-        color: white;
-        border-radius: $radius_padrao;
-        padding: 1rem 0;
+      background-color: #0160d6;
+      border: none;
+      color: white;
+      border-radius: $radius_padrao;
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+      cursor: pointer;
     }
   }
 }
