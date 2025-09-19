@@ -12,6 +12,10 @@ function FormularioLogin() {
       : setLoginMethod("sign_up");
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
     <section className="login_card__conteudo">
       <section className="conteudo__titulos">
@@ -35,7 +39,7 @@ function FormularioLogin() {
           Criar conta
         </button>
       </div>
-      <form className="conteudo__formulario">
+      <form className="conteudo__formulario" onSubmit={handleSubmit}>
         <div className="entrada">
           <input placeholder="E-mail" type="email" maxLength={30} required />{" "}
           <img src={mail} alt="Ícone de e-mail" />
