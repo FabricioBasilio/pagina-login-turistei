@@ -1,7 +1,10 @@
+import "./LinhaSegmentacao.scss"
+
+
 function LinhaSegmentacao() {
   return (
     <div>
-      <span>OU</span>
+      <span className="texto_segmentacao">OU</span>
     </div>
   );
 }

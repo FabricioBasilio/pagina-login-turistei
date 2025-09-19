@@ -1,0 +1,23 @@
+.texto_segmentacao {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  
+  &::before,
+  &::after {
+      content: "";
+      display: inline-block;
+      background-color: gray;
+      height: 0.05rem;
+      width: 100%;
+      
+  }
+
+  &::before {
+    margin-right: 0.3rem;
+  }
+
+   &::after {
+    margin-left: 0.3rem;
+  }
+}
